@@ -1,4 +1,4 @@
-# Application Development with Kubernetes
+# Go Application Development with Kubernetes
 
 Welcome to Application Development with Kubernetes tutorial!  You can develop an
 application without using Kubernetes.  However, if you target to deploy the
