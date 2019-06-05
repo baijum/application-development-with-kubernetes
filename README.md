@@ -122,6 +122,31 @@ Events:
 
 ## ReplicaSet
 
+nginx-replicaset.yaml:
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-http-server
+  labels:
+    app: http-server
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: backend
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - name: nginx
+        image: docker.io/nginx
+```
+
 ## Deployment
 
 ## Service
